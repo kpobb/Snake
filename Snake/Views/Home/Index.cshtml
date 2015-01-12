@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "M&M's Snake";
+}
+<div id="game"></div>
+
+@section scripts
+{
+   @Scripts.Render("~/bundles/snakeGame")
+
+    <script>
+        var game = new SnakeGame("game", 600, 10, 10);
+        game.setTrollingContent('@Url.Action("TrollingContent", "Home")');
+        game.start();
+    </script>
+}

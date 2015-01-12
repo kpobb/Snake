@@ -1,0 +1,51 @@
+﻿#screen {
+    background: url('../../Content/images/M&Ms-Pile.jpg');
+    background-size: 150%;
+    margin: 50px auto 20px auto;
+    border-radius: 10px;
+    min-width: 420px;
+    padding: 15px;
+}
+
+    #screen td {
+        width: 72px;
+        height: 72px;
+        min-width: 72px;
+        min-height: 72px;
+        border-radius: 6px;
+        border: 1px solid white;
+    }
+
+        #screen td:not(#snake-head):not(.snake-tail):not(#snake-food) {
+            opacity: 0.35;
+        }
+
+#snake-head {
+    background: url('../../Content/images/win-interactive.jpg');
+    background-size: 74px 74px;
+}
+
+.snake-tail {
+    background-color: white;
+}
+
+#snake-food {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#message {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px 25px 25px 0px;
+    width: 80px;
+    min-height: 40px;
+    padding: 10px;
+    position: absolute;
+    font-size: 11px;
+    font-weight: bold;
+    overflow: hidden;
+}

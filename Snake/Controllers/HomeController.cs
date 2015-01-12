@@ -9,8 +9,13 @@ namespace Snake.Controllers
             return View();
         }
 
-        public JsonResult TrollingContent()
+        public ActionResult TrollingContent()
         {
+            if (!Request.IsAjaxRequest())
+            {
+                return RedirectToAction("Index");
+            }
+
             var path = HttpContext.Server.MapPath(@"~\Content\TrollingContent.json");
             var data = System.IO.File.ReadAllText(path);
 

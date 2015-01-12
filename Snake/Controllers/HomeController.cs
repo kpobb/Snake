@@ -14,7 +14,7 @@ namespace Snake.Controllers
         {
             if (!Request.IsAjaxRequest())
             {
-                return RedirectToAction("Index");
+                return Content("Умный, да?)<script>setTimeout(function() { document.location = '/';}, 2000);</script>");
             }
 
             var path = HttpContext.Server.MapPath(@"~\Content\TrollingContent.json");

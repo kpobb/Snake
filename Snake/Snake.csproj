@@ -97,6 +97,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <None Include="Content\TrollingContent.json" />
+    <Compile Include="Components\CustomEncryption.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Extensions\RequestExtensions.cs" />
     <Compile Include="Global.asax.cs">
@@ -109,6 +110,7 @@
     <Content Include="Content\images\win-interactive.jpg" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\Snake\CustomEncryption.js" />
     <Content Include="Scripts\Snake\Snake.js" />
     <Content Include="Scripts\Snake\Food.js" />
     <Content Include="Scripts\Snake\Message.js" />

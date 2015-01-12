@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using Snake.Components;
 
 namespace Snake.Controllers
 {
@@ -19,7 +20,7 @@ namespace Snake.Controllers
             var path = HttpContext.Server.MapPath(@"~\Content\TrollingContent.json");
             var data = System.IO.File.ReadAllText(path);
 
-            return new JsonResult { Data = data, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+            return new JsonResult { Data = CustomEncoder.Encode(data), JsonRequestBehavior = JsonRequestBehavior.AllowGet };
         }
     }
 }

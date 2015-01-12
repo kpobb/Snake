@@ -1,6 +1,7 @@
 ﻿function SnakeGame(containerId, gameSpeed, screenWidth, screenHeight) {
     var food = new Food("snake-food");
     var snake = new Snake("snake-head", "snake-tail", screenWidth, screenHeight);
+    var encryption = new CustomEncription();
 
     this.start = function () {
         screenHeight = screenWidth < 5 ? 5 : screenWidth;
@@ -40,8 +41,13 @@
             dataType: "json",
             async: false,
         }).done(function (json) {
-            var response = eval("(" + json + ")");
-            food.setTrollingContent(response.TrollingContent);
+            var response;
+            try {
+                var decodedJson = encryption.Decode(json);
+                response = eval("(" + decodedJson + ")");
+                food.setTrollingContent(response.TrollingContent);
+            } catch (e) {
+            } 
         });
     }
 

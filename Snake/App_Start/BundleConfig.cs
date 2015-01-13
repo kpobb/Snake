@@ -1,4 +1,5 @@
 ﻿using System.Web.Optimization;
+using Yahoo.Yui.Compressor.Web.Optimization;
 
 namespace Snake
 {
@@ -6,12 +7,18 @@ namespace Snake
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+            var javaScriptCompressorConfig = new JavaScriptCompressorConfig();
+            var javaScriptTransform = new YuiCompressorTransform(javaScriptCompressorConfig);
+
+            bundles.Add(new Bundle("~/bundles/jquery", javaScriptTransform).Include(
                         "~/Scripts/jquery-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/snakeGame").IncludeDirectory("~/Scripts/Snake", "*.js"));
+            bundles.Add(new Bundle("~/bundles/snakeGame", javaScriptTransform).IncludeDirectory("~/Scripts/Snake", "*.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/styles/snake.css"));
+            var cssCompressorConfig = new CssCompressorConfig() { RemoveComments = true };
+            var cssTransform = new YuiCompressorTransform(cssCompressorConfig);
+
+            bundles.Add(new Bundle("~/Content/css", cssTransform).Include("~/Content/styles/snake.css"));
         }
     }
 }

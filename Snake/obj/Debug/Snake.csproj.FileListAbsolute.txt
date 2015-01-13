@@ -53,7 +53,6 @@ D:\Programs\Snake\Snake\bin\Snake.dll
 D:\Programs\Snake\Snake\bin\Snake.pdb
 D:\Programs\Snake\Snake\bin\Antlr3.Runtime.dll
 D:\Programs\Snake\Snake\bin\Microsoft.Web.Infrastructure.dll
-D:\Programs\Snake\Snake\bin\Newtonsoft.Json.dll
 D:\Programs\Snake\Snake\bin\System.Web.Helpers.dll
 D:\Programs\Snake\Snake\bin\System.Web.Mvc.dll
 D:\Programs\Snake\Snake\bin\System.Web.Optimization.dll
@@ -62,11 +61,8 @@ D:\Programs\Snake\Snake\bin\System.Web.WebPages.Deployment.dll
 D:\Programs\Snake\Snake\bin\System.Web.WebPages.dll
 D:\Programs\Snake\Snake\bin\System.Web.WebPages.Razor.dll
 D:\Programs\Snake\Snake\bin\WebGrease.dll
-D:\Programs\Snake\Snake\bin\Antlr3.Runtime.pdb
-D:\Programs\Snake\Snake\bin\Newtonsoft.Json.xml
 D:\Programs\Snake\Snake\bin\System.Web.Helpers.xml
 D:\Programs\Snake\Snake\bin\System.Web.Mvc.xml
-D:\Programs\Snake\Snake\bin\System.Web.Optimization.xml
 D:\Programs\Snake\Snake\bin\System.Web.Razor.xml
 D:\Programs\Snake\Snake\bin\System.Web.WebPages.xml
 D:\Programs\Snake\Snake\bin\System.Web.WebPages.Deployment.xml
@@ -74,8 +70,6 @@ D:\Programs\Snake\Snake\bin\System.Web.WebPages.Razor.xml
 D:\Programs\Snake\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
 D:\Programs\Snake\Snake\obj\Debug\Snake.dll
 D:\Programs\Snake\Snake\obj\Debug\Snake.pdb
-D:\Programs\Snake\Snake\bin\EcmaScript.NET.dll
-D:\Programs\Snake\Snake\bin\Yahoo.Yui.Compressor.dll
 D:\Projects\Home\Snake\Snake\bin\EcmaScript.NET.dll
 D:\Projects\Home\Snake\Snake\bin\Yahoo.Yui.Compressor.dll
 D:\Projects\Home\Snake\Snake\bin\Yahoo.Yui.Compressor.Web.Optimization.dll
@@ -132,3 +126,4 @@ D:\Projects\Home\Snake\dev\Snake\bin\System.Web.Razor.xml
 D:\Projects\Home\Snake\dev\Snake\bin\System.Web.WebPages.xml
 D:\Projects\Home\Snake\dev\Snake\bin\System.Web.WebPages.Deployment.xml
 D:\Projects\Home\Snake\dev\Snake\bin\System.Web.WebPages.Razor.xml
+D:\Programs\Snake\Snake\bin\Snake.dll.config

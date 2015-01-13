@@ -1,4 +1,4 @@
-﻿function Snake(snakeId, tailClass, screenWidth, screenHeight) {
+﻿function Snake(snakeId, tailClass, food, screenWidth, screenHeight) {
     // variables
     var arrowKeyCodes = [
         37, // left
@@ -39,6 +39,24 @@
             setHeadOffset(0, 1);
         } else if (clickedKeyCode == 40) {
             setHeadOffset(0, -1);
+        }
+    }
+
+    this.getX = function () {
+        return $("#" + snakeId).getData("x");
+    }
+
+    this.getY = function () {
+        return $("#" + snakeId).getData("y");
+    }
+
+    this.reduceMessageOpacity = function () {
+        if (this.getX() == (food.getX() + 1) && this.getY() == (food.getY() + 1) ||
+            this.getX() == (food.getX() + 1) && this.getY() == food.getY() ||
+            this.getX() == food.getX() && this.getY() == (food.getY() + 1)) {
+            food.setMessageOpacity(0.4);
+        } else {
+            food.setMessageOpacity(1);
         }
     }
 

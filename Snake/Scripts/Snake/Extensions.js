@@ -9,6 +9,10 @@
     return value;
 };
 
+$.fn.getData = function (name) {
+    return parseInt($(this).data(name));
+}
+
 $.fn.setXY = function (x, y) {
     return this.each(function () {
         $(this).attr("data-x", x).attr("data-y", y);

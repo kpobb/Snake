@@ -1,6 +1,6 @@
 ﻿function SnakeGame(containerId, gameSpeed, screenWidth, screenHeight) {
     var food = new Food("snake-food");
-    var snake = new Snake("snake-head", "snake-tail", screenWidth, screenHeight);
+    var snake = new Snake("snake-head", "snake-tail", food, screenWidth, screenHeight);
     var encryption = new CustomEncription();
 
     this.start = function () {
@@ -15,6 +15,8 @@
         var interval = setInterval(function () {
             snake.runKeyboardHandler();
 
+            snake.reduceMessageOpacity();
+
             // food was eaten
             if ($("#snake-food").length == 0) {
                 snake.increaseSnakeSize();
@@ -25,7 +27,7 @@
                 alert("You win!");
                 clearInterval(interval);
             }
-            // head bitten tail
+                // head bitten tail
             else if ($("#snake-head").hasClass("snake-tail")) {
                 alert("You lost!");
                 clearInterval(interval);
@@ -40,17 +42,13 @@
             type: "GET",
             dataType: "json",
             async: false,
-        }).done(function (json) {
-            var response;
+        }).done(function (response) {
             try {
-                var decodedJson = encryption.Decode(json);
-
-                response = $.parseJSON(decodedJson);
-
-                food.setTrollingContent(response.TrollingContent);
+                var json = encryption.Decode(response);
+                var obj = $.parseJSON(json);
+                food.setTrollingContent(obj.TrollingContent);
             } catch (ex) {
-                alert(ex)
-            } 
+            }
         });
     }
 

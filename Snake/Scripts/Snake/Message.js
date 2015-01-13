@@ -65,4 +65,8 @@
 
         colorMap.push(map);
     }
+
+    this.setOpacity = function (factor) {
+        message.css("opacity", factor);
+    }
 }

@@ -53,6 +53,18 @@
         trollingContent = content;
     }
 
+    this.getX = function() {
+        return $("#" + containerId).getData("x");
+    }
+
+    this.getY = function () {
+        return $("#" + containerId).getData("y");
+    }
+
+    this.setMessageOpacity = function (factor) {
+        message.setOpacity(factor);
+    }
+
     function setFoodColor(hexColor) {
         $("#" + containerId).css("background-color", hexColor);
     }

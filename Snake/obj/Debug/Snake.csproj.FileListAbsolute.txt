@@ -49,7 +49,6 @@ D:\Projects\Home\Snake\Snake\bin\System.Web.WebPages.Razor.xml
 D:\Projects\Home\Snake\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
 D:\Projects\Home\Snake\Snake\obj\Debug\Snake.dll
 D:\Projects\Home\Snake\Snake\obj\Debug\Snake.pdb
-D:\Programs\Snake\Snake\bin\Snake.dll.config
 D:\Programs\Snake\Snake\bin\Snake.dll
 D:\Programs\Snake\Snake\bin\Snake.pdb
 D:\Programs\Snake\Snake\bin\Antlr3.Runtime.dll
@@ -75,3 +74,5 @@ D:\Programs\Snake\Snake\bin\System.Web.WebPages.Razor.xml
 D:\Programs\Snake\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
 D:\Programs\Snake\Snake\obj\Debug\Snake.dll
 D:\Programs\Snake\Snake\obj\Debug\Snake.pdb
+D:\Programs\Snake\Snake\bin\EcmaScript.NET.dll
+D:\Programs\Snake\Snake\bin\Yahoo.Yui.Compressor.dll

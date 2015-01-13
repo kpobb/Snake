@@ -93,14 +93,9 @@ D:\Projects\Home\Snake\dev\Snake\Snake\bin\System.Web.WebPages.Deployment.dll
 D:\Projects\Home\Snake\dev\Snake\Snake\bin\System.Web.WebPages.dll
 D:\Projects\Home\Snake\dev\Snake\Snake\bin\System.Web.WebPages.Razor.dll
 D:\Projects\Home\Snake\dev\Snake\Snake\bin\WebGrease.dll
-D:\Projects\Home\Snake\dev\Snake\Snake\bin\Yahoo.Yui.Compressor.dll
-D:\Projects\Home\Snake\dev\Snake\Snake\bin\Yahoo.Yui.Compressor.Web.Optimization.dll
-D:\Projects\Home\Snake\dev\Snake\Snake\bin\EcmaScript.NET.dll
-D:\Projects\Home\Snake\dev\Snake\Snake\bin\Antlr3.Runtime.pdb
 D:\Projects\Home\Snake\dev\Snake\Snake\bin\Newtonsoft.Json.xml
 D:\Projects\Home\Snake\dev\Snake\Snake\bin\System.Web.Helpers.xml
 D:\Projects\Home\Snake\dev\Snake\Snake\bin\System.Web.Mvc.xml
-D:\Projects\Home\Snake\dev\Snake\Snake\bin\System.Web.Optimization.xml
 D:\Projects\Home\Snake\dev\Snake\Snake\bin\System.Web.Razor.xml
 D:\Projects\Home\Snake\dev\Snake\Snake\bin\System.Web.WebPages.xml
 D:\Projects\Home\Snake\dev\Snake\Snake\bin\System.Web.WebPages.Deployment.xml

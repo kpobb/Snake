@@ -44,9 +44,12 @@
             var response;
             try {
                 var decodedJson = encryption.Decode(json);
-                response = eval("(" + decodedJson + ")");
+
+                response = $.parseJSON(decodedJson);
+
                 food.setTrollingContent(response.TrollingContent);
-            } catch (e) {
+            } catch (ex) {
+                alert(ex)
             } 
         });
     }

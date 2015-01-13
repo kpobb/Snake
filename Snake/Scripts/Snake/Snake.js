@@ -26,7 +26,7 @@
         snakeSize++;
     }
 
-    this.runKeyboardHandler = function () {
+    this.setHeadPosition = function () {
         if (clickedKeyCode == null) {
             return;
         }

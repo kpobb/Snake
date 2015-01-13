@@ -13,7 +13,7 @@
         food.setRandomPosition();
 
         var interval = setInterval(function () {
-            snake.runKeyboardHandler();
+            snake.setHeadPosition();
 
             snake.reduceMessageOpacity();
 
